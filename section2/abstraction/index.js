@@ -12,6 +12,7 @@ class Circle {
         return 2 * Math.PI * this.radius;
     }
 }
+
 class Rectangle {
     width;
     height;
@@ -28,9 +29,11 @@ class Rectangle {
         return 2 * (this.width + this.height);
     }
 }
+
 function calculateTotalArea(shape) {
     return shape.area();
 }
+
 let circle = new Circle(5);
 let rectangle = new Rectangle(4, 6);
 console.log(`Circle Area: ${calculateTotalArea(circle)}`);
