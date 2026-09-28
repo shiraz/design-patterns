@@ -1,5 +1,5 @@
 class Product {
-  public id: string;
+  private id: string;
   public price: number;
   public description: string;
 
@@ -61,3 +61,9 @@ class Electronic extends Product {
     console.log(`Model: ${this.model}`);
   }
 }
+
+const book = new Book("1", 29.99, "A great book", "John Doe", "TypeScript Basics");
+const electronic = new Electronic("2", 499.99, "A powerful laptop", "BrandX", "ModelY");
+
+book.display();
+electronic.display();

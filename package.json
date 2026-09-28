@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Practice Design Patterns",
   "scripts": {
+    "check-and-run": "sh -c 'tsc --noEmit \"$1\" && tsx \"$1\"' --",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "(npx parcel ./index.html) & npx parcel watch ./index.html"
   },
@@ -22,6 +23,8 @@
     "prettier": "3.8.3"
   },
   "dependencies": {
+    "save": "^2.9.0",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3"
   }
 }
