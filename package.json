@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Practice Design Patterns",
   "scripts": {
-    "check-and-run": "sh -c 'tsc --noEmit \"$1\" && tsx \"$1\"' --",
+    "check-and-run": "sh -c 'tsc --noEmit -p tsconfig.json && tsx --tsconfig tsconfig.json \"$1\"' --",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "(npx parcel ./index.html) & npx parcel watch ./index.html"
   },
